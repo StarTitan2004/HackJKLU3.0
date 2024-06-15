@@ -1,0 +1,56 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up fonts */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling header */
+header {
+    background-color: #000000; /* Dark blue color */
+    color: #ffffff; /* White text color */
+    padding: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none;
+}
+
+/* Styling section about */
+#about {
+    background-color: #ecf0f1; /* Light gray background color */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling footer */
+footer {
+    background-color: #7b7b7b; /* Dark blue color */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling links in footer */
+footer a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none;
+}

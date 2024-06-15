@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your Name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Enter your feedback" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Question 2: Quality of work</label><br>
+                <input type="radio" name="q2" value="Bad"> Bad<br>
+                <input type="radio" name="q2" value="Average"> Average<br>
+                <input type="radio" name="q2" value="Good"> Good<br>
+                <input type="radio" name="q2" value="Excellent" required> Excellent<br>
+            </div>
+
+            <div class="form-group">
+                <label>Question 1: How was the behavior of worker</label><br>
+                <input type="radio" name="q1" value="Bad" required> Bad<br>
+                <input type="radio" name="q1" value="Average"> Average<br>
+                <input type="radio" name="q1" value="Good"> Good<br>
+                <input type="radio" name="q1" value="Excellent"> Excellent<br>
+            </div>
+
+            <div class="form-group">
+                <label for="photos">Upload Photos:</label>
+                <input type="file" id="photos" name="photos" accept="image/*" multiple>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>
